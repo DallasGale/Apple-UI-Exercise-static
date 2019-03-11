@@ -1,7 +1,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-
   font-size: 13px;
+  margin: 0;
 }
 
 a {
@@ -23,7 +23,6 @@ a:active {
 a:focus {
     outline: none;
     color: rgb(82, 82, 82);
-    /* transition: all 0.4s; */
 }
 
 .active {
@@ -32,7 +31,7 @@ a:focus {
 }
 
 .content {
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .nav {
@@ -42,6 +41,7 @@ a:focus {
 
 .nav-list {
     display: block;
+    height: 30px;
     position: relative;
     margin: 0 auto;
     padding-left: 0;

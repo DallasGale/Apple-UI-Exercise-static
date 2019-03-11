@@ -1,23 +1,28 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-
   font-size: 13px;
+  margin: 0;
 }
 
 a {
     text-decoration: none;
     color: rgb(187, 187, 187);
+    transition: all 0.2s;
 }
 
 a:hover {
     color: rgb(110, 161, 238);
     text-decoration: none;
-    transition: all 0.4s;
+    transition: all 0.2s;
+}
+
+a:active {
+  color: rgb(82, 82, 82);
 }
 
 a:focus {
     outline: none;
-    /* transition: all 0.4s; */
+    color: rgb(82, 82, 82);
 }
 
 .active {
@@ -26,7 +31,7 @@ a:focus {
 }
 
 .content {
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .nav {
@@ -36,6 +41,7 @@ a:focus {
 
 .nav-list {
     display: block;
+    height: 30px;
     position: relative;
     margin: 0 auto;
     padding-left: 0;

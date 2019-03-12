@@ -10,12 +10,8 @@ let renderNavigation = () => {
 
   // -------------------Fetch Navigation Data-------------------
   fetch("navigation.json").then(res => {
-    if (res.status !== 200) {
-      console.error(
-        "Looks like the data could not be fetched!!: ",
-        res.statusText
-      );
-    } else {
+    if (res.ok) {
+      console.log(res.statusText);
       res.json().then(resData => {
         let iterator = 2;
 
@@ -105,7 +101,13 @@ let renderNavigation = () => {
         };
         window.addEventListener("resize", ResponsivePosition);
       });
+    
+    } else {
+      return;
     }
+  })
+  .catch(error => {
+    console.log(error);
   });
 };
 
